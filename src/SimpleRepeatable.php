@@ -177,7 +177,6 @@ class SimpleRepeatable extends Field
             'fields' => $this->fields->resolve(null) // Empty fields
         ]);
 
-        parent::resolve($resource, $attribute);
     }
 
     /**
