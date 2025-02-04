@@ -157,7 +157,7 @@ class SimpleRepeatable extends Field
      * @param string|null $attribute
      * @return void
      */
-    public function resolve($resource, ?string $attribute = null) : void
+    public function resolve($resource, ?string $attribute = null)
     {
         $novaRequest = app()->make(NovaRequest::class);
         $resolveForDisplay = $novaRequest->isResourceIndexRequest() || $novaRequest->isResourceDetailRequest();
